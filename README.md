@@ -21,7 +21,7 @@ source ~/.bashrc
 
 ```bash
 # Create the environment
-conda create -n ePAI python=3.10 -y
+conda create -n ePAI-advanced-sampling python=3.10 -y
 ```
 
 ---
@@ -29,11 +29,11 @@ conda create -n ePAI python=3.10 -y
 ## 1. Installation *[Only for First-Time Users]*
 
 ```bash
-source activate ePAI
+source activate ePAI-advanced-sampling
 # or: conda activate ePAI
 
-git clone https://github.com/BodyMaps/ePAI.git
-cd ePAI/train/
+git clone https://github.com/BodyMaps/ePAI-advanced-sampling.git
+cd ePAI-advanced-sampling/train/
 
 pip install --upgrade setuptools packaging
 pip install nnunetv2
@@ -44,11 +44,11 @@ pip install --upgrade git+https://github.com/FabianIsensee/hiddenlayer.git
 <details>
 <summary>[Optional] If the above installation does not work for you, try this!</summary>
 
-Delete the current `ePAI` environment. Then, do:
+Delete the current `ePAI-advanced-sampling` environment. Then, do:
 
 ```bash
-conda create -n ePAI python=3.11 -y
-source activate ePAI
+conda create -n ePAI-advanced-sampling python=3.11 -y
+source activate ePAI-advanced-sampling
 # or: conda activate ePAI
 
 git clone https://github.com/BodyMaps/ePAI.git
@@ -81,7 +81,7 @@ python -W ignore generate_json.py \
 # raw_dir: The directory saving raw data
 # dataset_name: The folder name in the raw directory
 
-nnUNetv2_plan_and_preprocess -d 1013 -npfp 64 -np 64 -c 3d_fullres
+nnUNetv2_plan_and_preprocess -d 8983 -npfp 64 -np 64 -c 3d_fullres
 # npfp and np are CPU cores used for preprocessing
 # This step will generate a nnUNetPlans.json in the
 # $nnUNet_preprocessed/Dataset1013_ePAI_3MM directory.
@@ -107,7 +107,7 @@ self.current_epoch = 0
 self.enable_deep_supervision = True
 ```
 
-Modify `$nnUNet_preprocessed/Dataset1013_ePAI_3MM/nnUNetPlans.json`:
+Modify `$nnUNet_preprocessed/Dataset8983_ePAI-advanced-sampling_3MM/nnUNetPlans.json`:
 
 ```json
 "batch_size": 16
@@ -126,7 +126,7 @@ export nnUNet_results="./runsv2"
 ROOT_PATH="/mnt/T9/project/ePAI/train"
 cd $ROOT_PATH
 
-CUDA_VISIBLE_DEVICES=0 nnUNetv2_train 1013 3d_fullres all
+CUDA_VISIBLE_DEVICES=0 nnUNetv2_train 8983 3d_fullres all
 ```
 
 > **Note**: For training with custom trainers (e.g., for curriculum learning, focal loss, etc.), see the **Custom Trainers** section below for examples.
@@ -387,7 +387,7 @@ This section details the advanced, experimental trainers available in this repos
 **Example:**
 
 ```bash
-nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_DynamicSamplingLesion
+nnUNetv2_train 8983 3d_fullres all -tr nnUNetTrainer_DynamicSamplingLesion
 ```
 
 ### `nnUNetTrainer_DS_TO.py`
@@ -402,7 +402,7 @@ nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_DynamicSamplingLesion
 **Example:**
 
 ```bash
-nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_DS_TO
+nnUNetv2_train 8983 3d_fullres all -tr nnUNetTrainer_DS_TO
 ```
 
 ### `nnUNetTrainer_DynamicSampling_targeted.py`
@@ -428,7 +428,7 @@ nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_DS_TO
 **Example:**
 
 ```bash
-nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_Focal
+nnUNetv2_train 8983 3d_fullres all -tr nnUNetTrainer_Focal
 ```
 
 ### `nnUNetTrainer_Targeted_Focal.py`
@@ -442,7 +442,7 @@ nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_Focal
 
 ```bash
 export TARGET_RATIO=0.75
-nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_Targeted_Focal
+nnUNetv2_train 8983 3d_fullres all -tr nnUNetTrainer_Targeted_Focal
 ```
 
 ### `nnUNetTrainer_ModeratedAug_Targeted.py`
@@ -460,7 +460,7 @@ nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_Targeted_Focal
 export OVERSAMPLE_FG=0.66
 export TARGET_RATIO=0.75
 export AUG_SPATIAL_P=0.2
-nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_ModeratedAug_Targeted
+nnUNetv2_train 8983 3d_fullres all -tr nnUNetTrainer_ModeratedAug_Targeted
 ```
 
 ### `nnUNetTrainer_Targeted_FTL.py`
@@ -482,7 +482,7 @@ export OPTIMIZER_TYPE="AdamW"
 export INIT_LR=0.001
 export FTL_ALPHA=0.7
 export FTL_BETA=0.3
-nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_Targeted_FTL
+nnUNetv2_train 8983 3d_fullres all -tr nnUNetTrainer_Targeted_FTL
 ```
 
 ### `nnUNetTrainer_Targeted_FTL_SWA.py`
@@ -498,7 +498,7 @@ nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_Targeted_FTL
 export OPTIMIZER_TYPE="AdamW"
 export INIT_LR=0.001
 export SWA_LR=0.0001
-nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_Targeted_FTL_SWA
+nnUNetv2_train 8983 3d_fullres all -tr nnUNetTrainer_Targeted_FTL_SWA
 ```
 
 ### `nnUNetTrainer_LesionOversample.py`
@@ -510,7 +510,7 @@ nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_Targeted_FTL_SWA
 **Example:**
 
 ```bash
-nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_LesionOversample
+nnUNetv2_train 8983 3d_fullres all -tr nnUNetTrainer_LesionOversample
 ```
 
 ### `nnUNetTrainer_LesionPatchSampler.py`
@@ -529,7 +529,7 @@ export NNUNET_NEG_SAMPLES=100
 export NNUNET_FG_OVERSAMPLE=0.5
 export NNUNET_PATCH_OVERSAMPLE_LESION_ONLY=1
 
-nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_LesionPatchSampler
+nnUNetv2_train 8983 3d_fullres all -tr nnUNetTrainer_LesionPatchSampler
 # Output folder will encode fg/neg/L_Only in its path
 ```
 
@@ -547,7 +547,7 @@ nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_LesionPatchSampler
 export NNUNET_NEG_SAMPLES=150
 export NNUNet_FG_OVERSAMPLE=0.8
 
-nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_FlexibleLesionSampler
+nnUNetv2_train 8983 3d_fullres all -tr nnUNetTrainer_FlexibleLesionSampler
 ```
 
 ### `nnUNetTrainer_IntenseAug_Targeted.py`
@@ -560,7 +560,7 @@ nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_FlexibleLesionSampler
 **Example:**
 
 ```bash
-nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_IntenseAug_Targeted
+nnUNetv2_train 8983 3d_fullres all -tr nnUNetTrainer_IntenseAug_Targeted
 ```
 
 ### `nnUNetTrainer_Ablation_Curriculum.py`
@@ -587,14 +587,14 @@ export CURRICULUM_STRATEGY="STEPPED_E2H"
 export CURRICULUM_METRIC="S10_Composite"
 export CURRICULUM_STEPS=4
 
-nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_Ablation_Curriculum
+nnUNetv2_train 8983 3d_fullres all -tr nnUNetTrainer_Ablation_Curriculum
 ```
 
 **Baseline (Fast Path):**
 
 ```bash
 export CURRICULUM_STRATEGY="RANDOM"
-nnUNetv2_train 1013 3d_fullres all -tr nnUNetTrainer_Ablation_Curriculum
+nnUNetv2_train 8983 3d_fullres all -tr nnUNetTrainer_Ablation_Curriculum
 ```
 
 ---
