@@ -132,221 +132,6 @@ CUDA_VISIBLE_DEVICES=0 nnUNetv2_train 8983 3d_fullres all
 > **Note**: For training with custom trainers (e.g., for curriculum learning, focal loss, etc.), see the **Custom Trainers** section below for examples.
 
 ---
-
-## 3. Inference ePAI
-
-### 3.1 Convert dataset (CT scans) to nnUNet format *[Only for First-Time Users]*
-
-Assume the original CT data is under **BDMAP** format:
-
-```
-path_to_bdmap_format_data/
-│── BDMAP_0000001/
-│    └── ct.nii.gz
-│── BDMAP_0000002/
-│    └── ct.nii.gz
-└── ...
-```
-
-Then, to convert it into a nnUNet input folder, run:
-
-```bash
-INPUT_BDMAP_PATH="/mnt/bodymaps/image_only/AbdomenAtlasPro/AbdomenAtlasPro"
-OUTPUT_BDMAP_PATH="/mnt/bodymaps/ePAI/nnUNet/eval"
-python -W ignore softlink2nnUNet.py \
-  --input_bdmap_path $INPUT_BDMAP_PATH \
-  --output_nnunet_path $OUTPUT_BDMAP_PATH
-```
-
-This will create softlinks of the BDMAP format data into nnUNet format:
-
-```
-$OUTPUT_BDMAP_PATH/
-│── BDMAP_0000001_0000.nii.gz
-│── BDMAP_0000002_0000.nii.gz
-└── ...
-```
-
-> **Note**: Here, the `OUTPUT_BDMAP_PATH` will be used in the **DATA_PATH** below (Section 3.3). Use this nnUNet-format data folder for the inference process (Section 3.3).
-
-### 3.2 Convert dataset (ground truth segmentation masks) to nnUNet format *[Only for First-Time Users]*
-
-Assume the original ground truth segmentation masks are under **BDMAP** format:
-
-```
-path_to_bdmap_format_gt/
-│── BDMAP_0000001/
-│    └── segmentations
-│        └── pancreas.nii.gz
-│        └── pancreatic_duct.nii.gz
-│        └── pancreatic_pdac.nii.gz
-│        └── pancreatic_cyst.nii.gz
-│        └── pancreatic_pnet.nii.gz
-│        └── ...
-│── BDMAP_0000002/
-│    └── segmentations
-│        └── ...
-└── ...
-```
-
-where each NIfTI file is a binary (i.e., `0 = background`, `1 = target class`) segmentation mask of the corresponding class.
-
-> **Warning**: `pancreas`, `pancreatic_duct`, `pancreatic_pdac`, `pancreatic_cyst`, and `pancreatic_pnet` segmentation masks are **REQUIRED**; other class masks are optional.
-
-To convert it into a nnUNet-format combined segmentation mask folder, first open `bdmapLabels2nnunetLabels.py` and modify the `label_mapping` to fit your needs. Then, run:
-
-```bash
-INPUT_BDMAP_PATH="/mnt/bodymaps/image_only/AbdomenAtlasPro/AbdomenAtlasPro"
-INPUT_BDMAP_GT_PATH="/mnt/bodymaps/mask_only/AbdomenAtlasPro/AbdomenAtlasPro"
-OUTPUT_BDMAP_GT_PATH="/mnt/bodymaps/ePAI/nnUNet/labelsTs"
-
-python -W ignore bdmapLabels2nnunetLabels.py \
-  --input_bdmap_path $INPUT_BDMAP_PATH \
-  --input_bdmap_gt_path $INPUT_BDMAP_GT_PATH \
-  --output_nnunet_gt_path $OUTPUT_BDMAP_GT_PATH
-```
-
-This will create combined segmentation masks of the BDMAP-format ground truth into nnUNet format:
-
-```
-$OUTPUT_BDMAP_GT_PATH/
-│── BDMAP_0000001.nii.gz
-│── BDMAP_0000002.nii.gz
-└── ...
-```
-
-where each NIfTI file is a combined segmentation mask of each CT (e.g., in the combined segmentation mask: `0` for background, `13` for pancreas, `23` for pancreatic PDAC, `24` for pancreatic Cyst, etc.).
-
-> **Note**: The `label_mapping` order doesn't matter; we only need to provide 5 pancreas-related class mappings in the `LABEL_IDS` below (Sec. 3.3). Here, the `OUTPUT_BDMAP_GT_PATH` will be used in the **LABEL_PATH** below (Section 3.3). Use this nnUNet-format segmentation mask folder for the inference process.
-
-### 3.3 Run the inference process
-
-**[Optional, but Important]** Download the best checkpoint
-
-```bash
-wget http://www.cs.jhu.edu/~zongwei/model/qchen76_2025_0421.tar.gz
-tar -xzvf qchen76_2025_0421.tar.gz
-
-wget http://www.cs.jhu.edu/~zongwei/model/qchen76_2025_0404.tar.gz
-tar -xzvf qchen76_2025_0404.tar.gz
-
-wget http://www.cs.jhu.edu/~zongwei/model/wli131_2024_1115.tar.gz
-tar -xzvf wli131_2024_1115.tar.gz
-```
-
-#### 3.3.1 Run the inference process (**NO** ground truth in the output CSV file)
-
-```bash
-export nnUNet_N_proc_DA=36 # number of CPU cores for training, not important
-export nnUNet_raw="/mnt/bodymaps/ePAI/nnUNet/raw" # Placeholder, not important
-export nnUNet_preprocessed="/mnt/bodymaps/ePAI/nnUNet/preprocessed" # Placeholder, not important
-export nnUNet_results="./runsv2" # Placeholder, not important
-
-ROOT_PATH="/mnt/T9/project/ePAI/train"
-DATA_PATH="/mnt/bodymaps/ePAI/nnUNet/eval"
-SAVE_PATH="${ROOT_PATH}/out"
-
-CKPT_PATH="${ROOT_PATH}/runsv2/Dataset1013_ePAI_3MM/nnUNetTrainer__nnUNetPlans__3d_fullres"
-# Best checkpoint
-# CKPT_PATH="/mnt/bodymaps/ePAI/model/qchen76_2025_0421/nnUNetTrainer__nnUNetPlans__3d_fullres"
-# Second best checkpoint
-# CKPT_PATH="/mnt/bodymaps/ePAI/model/qchen76_2025_0404/nnUNetTrainer__nnUNetPlans__3d_fullres"
-# CKPT_PATH="/mnt/bodymaps/ePAI/model/wli131_2024_1115/nnUNetTrainer__nnUNetPlans__3d_fullres"
-
-cd $ROOT_PATH
-PATIENT_ID="JHH-Test-nonPDAC<2cm"
-INPUT_CSV_PATH="input_csv/${PATIENT_ID}.csv"
-OUTPUT_CSV_PATH="output_csv/${PATIENT_ID}.csv"
-
-CUDA_VISIBLE_DEVICES=0 nnUNetv2_predict_from_modelfolder \
-  -i $DATA_PATH \
-  -o $SAVE_PATH \
-  -m $CKPT_PATH \
-  -f all \
-  --input_csv $INPUT_CSV_PATH \
-  --output_csv $OUTPUT_CSV_PATH \
-  --continue_prediction \
-  --save_probabilities \
-  -npp 3 \
-  -nps 3 \
-  -num_parts 1 \
-  -part_id 0 \
-  -chk checkpoint_final.pth
-```
-
-**The output contains two types:**
-
-1. The segmentation predictions under `$SAVE_PATH`  
-2. The CSV output under `OUTPUT_CSV_PATH`
-
-#### 3.3.2 Run the inference process (**INCLUDES** ground truth in the output CSV file)
-
-<details>
-<summary>[Optional] If you already have the inference and output CSV ready, and only want to add ground truth to the current output CSV</summary>
-
-Make sure your output CSV file has the same column names as the ones in `ePAI/train/csv_header.csv` (e.g., your output CSV file should contain `pancreas_pr`). Create a folder named `output_csv` inside the `ePAI/train/` folder. Copy your output CSV files into the `ePAI/train/output_csv/` folder.
-
-```bash
-cd ePAI/train/
-mkdir -p output_csv/
-cp /path/to/your/csv/*.csv output_csv/
-```
-</details>
-
-```bash
-export nnUNet_N_proc_DA=36 # number of CPU cores for training, not important
-export nnUNet_raw="/mnt/bodymaps/ePAI/nnUNet/raw" # Placeholder, not important
-export nnUNet_preprocessed="/mnt/bodymaps/ePAI/nnUNet/preprocessed" # Placeholder, not important
-export nnUNet_results="./runsv2" # Placeholder, not important
-
-ROOT_PATH="/mnt/T9/project/ePAI/train"
-DATA_PATH="/mnt/bodymaps/ePAI/nnUNet/eval"
-SAVE_PATH="${ROOT_PATH}/out"
-
-LABEL_PATH="/mnt/bodymaps/ePAI/nnUNet/raw/Dataset1013_ePAI_3MM/labelsTs"  # path to combined labels (nnUNet format)
-LABEL_IDS=(13 14 23 24 25)  # the label ID of pancreas, duct, pdac, cyst, pnet (MUST contain 5 numbers; order MATTERS!)
-# Note: if you do not have the ground truth label for pancreas/duct/pdac/cyst/pnet,
-# please put -1 as the label ID.
-# For example, if your dataset only has pdac labeled as 1 in step 3.2, then set:
-# LABEL_IDS=(-1 -1 1 -1 -1)
-
-CKPT_PATH="${ROOT_PATH}/runsv2/Dataset1013_ePAI_3MM/nnUNetTrainer__nnUNetPlans__3d_fullres"
-# Best checkpoint
-# CKPT_PATH="/mnt/bodymaps/ePAI/model/qchen76_2025_0404/nnUNetTrainer__nnUNetPlans__3d_fullres"
-# Second best checkpoint
-# CKPT_PATH="/mnt/bodymaps/ePAI/model/wli131_2024_1115/nnUNetTrainer__nnUNetPlans__3d_fullres"
-
-cd $ROOT_PATH
-PATIENT_ID="JHH-Test-nonPDAC<2cm"
-INPUT_CSV_PATH="input_csv/${PATIENT_ID}.csv"
-OUTPUT_CSV_PATH="output_csv/${PATIENT_ID}.csv"
-
-CUDA_VISIBLE_DEVICES=0 nnUNetv2_predict_from_modelfolder \
-  -i $DATA_PATH \
-  -o $SAVE_PATH \
-  -m $CKPT_PATH \
-  -l $LABEL_PATH \
-  --panc_duct_pdac_cyst_pnet "${LABEL_IDS[@]}" \
-  --add_gt_info_to_csv \
-  -f all \
-  --input_csv $INPUT_CSV_PATH \
-  --output_csv $OUTPUT_CSV_PATH \
-  --continue_prediction \
-  --save_probabilities \
-  -npp 3 \
-  -nps 3 \
-  -num_parts 1 \
-  -part_id 0 \
-  -chk checkpoint_final.pth
-```
-
-**The output contains two types:**
-
-1. The segmentation predictions under `$SAVE_PATH`  
-2. The CSV output under `OUTPUT_CSV_PATH`
-
----
-
 ## 🧩 Custom Trainers
 
 This section details the advanced, experimental trainers available in this repository. You can use any of these trainers by specifying the `-tr` flag in the `nnUNetv2_train` command.
@@ -643,4 +428,219 @@ output = model(image_tensor, metadata_vector)
 - Replace placeholder paths with your actual directories.  
 - Ensure the correct CUDA device is selected via `CUDA_VISIBLE_DEVICES`.  
 - Many trainers rely on environment variables—set them explicitly for reproducibility.
+
+
+---
+
+## 3. Inference ePAI
+
+### 3.1 Convert dataset (CT scans) to nnUNet format *[Only for First-Time Users]*
+
+Assume the original CT data is under **BDMAP** format:
+
+```
+path_to_bdmap_format_data/
+│── BDMAP_0000001/
+│    └── ct.nii.gz
+│── BDMAP_0000002/
+│    └── ct.nii.gz
+└── ...
+```
+
+Then, to convert it into a nnUNet input folder, run:
+
+```bash
+INPUT_BDMAP_PATH="/mnt/bodymaps/image_only/AbdomenAtlasPro/AbdomenAtlasPro"
+OUTPUT_BDMAP_PATH="/mnt/bodymaps/ePAI/nnUNet/eval"
+python -W ignore softlink2nnUNet.py \
+  --input_bdmap_path $INPUT_BDMAP_PATH \
+  --output_nnunet_path $OUTPUT_BDMAP_PATH
+```
+
+This will create softlinks of the BDMAP format data into nnUNet format:
+
+```
+$OUTPUT_BDMAP_PATH/
+│── BDMAP_0000001_0000.nii.gz
+│── BDMAP_0000002_0000.nii.gz
+└── ...
+```
+
+> **Note**: Here, the `OUTPUT_BDMAP_PATH` will be used in the **DATA_PATH** below (Section 3.3). Use this nnUNet-format data folder for the inference process (Section 3.3).
+
+### 3.2 Convert dataset (ground truth segmentation masks) to nnUNet format *[Only for First-Time Users]*
+
+Assume the original ground truth segmentation masks are under **BDMAP** format:
+
+```
+path_to_bdmap_format_gt/
+│── BDMAP_0000001/
+│    └── segmentations
+│        └── pancreas.nii.gz
+│        └── pancreatic_duct.nii.gz
+│        └── pancreatic_pdac.nii.gz
+│        └── pancreatic_cyst.nii.gz
+│        └── pancreatic_pnet.nii.gz
+│        └── ...
+│── BDMAP_0000002/
+│    └── segmentations
+│        └── ...
+└── ...
+```
+
+where each NIfTI file is a binary (i.e., `0 = background`, `1 = target class`) segmentation mask of the corresponding class.
+
+> **Warning**: `pancreas`, `pancreatic_duct`, `pancreatic_pdac`, `pancreatic_cyst`, and `pancreatic_pnet` segmentation masks are **REQUIRED**; other class masks are optional.
+
+To convert it into a nnUNet-format combined segmentation mask folder, first open `bdmapLabels2nnunetLabels.py` and modify the `label_mapping` to fit your needs. Then, run:
+
+```bash
+INPUT_BDMAP_PATH="/mnt/bodymaps/image_only/AbdomenAtlasPro/AbdomenAtlasPro"
+INPUT_BDMAP_GT_PATH="/mnt/bodymaps/mask_only/AbdomenAtlasPro/AbdomenAtlasPro"
+OUTPUT_BDMAP_GT_PATH="/mnt/bodymaps/ePAI/nnUNet/labelsTs"
+
+python -W ignore bdmapLabels2nnunetLabels.py \
+  --input_bdmap_path $INPUT_BDMAP_PATH \
+  --input_bdmap_gt_path $INPUT_BDMAP_GT_PATH \
+  --output_nnunet_gt_path $OUTPUT_BDMAP_GT_PATH
+```
+
+This will create combined segmentation masks of the BDMAP-format ground truth into nnUNet format:
+
+```
+$OUTPUT_BDMAP_GT_PATH/
+│── BDMAP_0000001.nii.gz
+│── BDMAP_0000002.nii.gz
+└── ...
+```
+
+where each NIfTI file is a combined segmentation mask of each CT (e.g., in the combined segmentation mask: `0` for background, `13` for pancreas, `23` for pancreatic PDAC, `24` for pancreatic Cyst, etc.).
+
+> **Note**: The `label_mapping` order doesn't matter; we only need to provide 5 pancreas-related class mappings in the `LABEL_IDS` below (Sec. 3.3). Here, the `OUTPUT_BDMAP_GT_PATH` will be used in the **LABEL_PATH** below (Section 3.3). Use this nnUNet-format segmentation mask folder for the inference process.
+
+### 3.3 Run the inference process
+
+**[Optional, but Important]** Download the best checkpoint
+
+```bash
+wget http://www.cs.jhu.edu/~zongwei/model/qchen76_2025_0421.tar.gz
+tar -xzvf qchen76_2025_0421.tar.gz
+
+wget http://www.cs.jhu.edu/~zongwei/model/qchen76_2025_0404.tar.gz
+tar -xzvf qchen76_2025_0404.tar.gz
+
+wget http://www.cs.jhu.edu/~zongwei/model/wli131_2024_1115.tar.gz
+tar -xzvf wli131_2024_1115.tar.gz
+```
+
+#### 3.3.1 Run the inference process (**NO** ground truth in the output CSV file)
+
+```bash
+export nnUNet_N_proc_DA=36 # number of CPU cores for training, not important
+export nnUNet_raw="/mnt/bodymaps/ePAI/nnUNet/raw" # Placeholder, not important
+export nnUNet_preprocessed="/mnt/bodymaps/ePAI/nnUNet/preprocessed" # Placeholder, not important
+export nnUNet_results="./runsv2" # Placeholder, not important
+
+ROOT_PATH="/mnt/T9/project/ePAI/train"
+DATA_PATH="/mnt/bodymaps/ePAI/nnUNet/eval"
+SAVE_PATH="${ROOT_PATH}/out"
+
+CKPT_PATH="${ROOT_PATH}/runsv2/Dataset1013_ePAI_3MM/nnUNetTrainer__nnUNetPlans__3d_fullres"
+# Best checkpoint
+# CKPT_PATH="/mnt/bodymaps/ePAI/model/qchen76_2025_0421/nnUNetTrainer__nnUNetPlans__3d_fullres"
+# Second best checkpoint
+# CKPT_PATH="/mnt/bodymaps/ePAI/model/qchen76_2025_0404/nnUNetTrainer__nnUNetPlans__3d_fullres"
+# CKPT_PATH="/mnt/bodymaps/ePAI/model/wli131_2024_1115/nnUNetTrainer__nnUNetPlans__3d_fullres"
+
+cd $ROOT_PATH
+PATIENT_ID="JHH-Test-nonPDAC<2cm"
+INPUT_CSV_PATH="input_csv/${PATIENT_ID}.csv"
+OUTPUT_CSV_PATH="output_csv/${PATIENT_ID}.csv"
+
+CUDA_VISIBLE_DEVICES=0 nnUNetv2_predict_from_modelfolder \
+  -i $DATA_PATH \
+  -o $SAVE_PATH \
+  -m $CKPT_PATH \
+  -f all \
+  --input_csv $INPUT_CSV_PATH \
+  --output_csv $OUTPUT_CSV_PATH \
+  --continue_prediction \
+  --save_probabilities \
+  -npp 3 \
+  -nps 3 \
+  -num_parts 1 \
+  -part_id 0 \
+  -chk checkpoint_final.pth
+```
+
+**The output contains two types:**
+
+1. The segmentation predictions under `$SAVE_PATH`  
+2. The CSV output under `OUTPUT_CSV_PATH`
+
+#### 3.3.2 Run the inference process (**INCLUDES** ground truth in the output CSV file)
+
+<details>
+<summary>[Optional] If you already have the inference and output CSV ready, and only want to add ground truth to the current output CSV</summary>
+
+Make sure your output CSV file has the same column names as the ones in `ePAI/train/csv_header.csv` (e.g., your output CSV file should contain `pancreas_pr`). Create a folder named `output_csv` inside the `ePAI/train/` folder. Copy your output CSV files into the `ePAI/train/output_csv/` folder.
+
+```bash
+cd ePAI/train/
+mkdir -p output_csv/
+cp /path/to/your/csv/*.csv output_csv/
+```
+</details>
+
+```bash
+export nnUNet_N_proc_DA=36 # number of CPU cores for training, not important
+export nnUNet_raw="/mnt/bodymaps/ePAI/nnUNet/raw" # Placeholder, not important
+export nnUNet_preprocessed="/mnt/bodymaps/ePAI/nnUNet/preprocessed" # Placeholder, not important
+export nnUNet_results="./runsv2" # Placeholder, not important
+
+ROOT_PATH="/mnt/T9/project/ePAI/train"
+DATA_PATH="/mnt/bodymaps/ePAI/nnUNet/eval"
+SAVE_PATH="${ROOT_PATH}/out"
+
+LABEL_PATH="/mnt/bodymaps/ePAI/nnUNet/raw/Dataset1013_ePAI_3MM/labelsTs"  # path to combined labels (nnUNet format)
+LABEL_IDS=(13 14 23 24 25)  # the label ID of pancreas, duct, pdac, cyst, pnet (MUST contain 5 numbers; order MATTERS!)
+# Note: if you do not have the ground truth label for pancreas/duct/pdac/cyst/pnet,
+# please put -1 as the label ID.
+# For example, if your dataset only has pdac labeled as 1 in step 3.2, then set:
+# LABEL_IDS=(-1 -1 1 -1 -1)
+
+CKPT_PATH="${ROOT_PATH}/runsv2/Dataset1013_ePAI_3MM/nnUNetTrainer__nnUNetPlans__3d_fullres"
+# Best checkpoint
+# CKPT_PATH="/mnt/bodymaps/ePAI/model/qchen76_2025_0404/nnUNetTrainer__nnUNetPlans__3d_fullres"
+# Second best checkpoint
+# CKPT_PATH="/mnt/bodymaps/ePAI/model/wli131_2024_1115/nnUNetTrainer__nnUNetPlans__3d_fullres"
+
+cd $ROOT_PATH
+PATIENT_ID="JHH-Test-nonPDAC<2cm"
+INPUT_CSV_PATH="input_csv/${PATIENT_ID}.csv"
+OUTPUT_CSV_PATH="output_csv/${PATIENT_ID}.csv"
+
+CUDA_VISIBLE_DEVICES=0 nnUNetv2_predict_from_modelfolder \
+  -i $DATA_PATH \
+  -o $SAVE_PATH \
+  -m $CKPT_PATH \
+  -l $LABEL_PATH \
+  --panc_duct_pdac_cyst_pnet "${LABEL_IDS[@]}" \
+  --add_gt_info_to_csv \
+  -f all \
+  --input_csv $INPUT_CSV_PATH \
+  --output_csv $OUTPUT_CSV_PATH \
+  --continue_prediction \
+  --save_probabilities \
+  -npp 3 \
+  -nps 3 \
+  -num_parts 1 \
+  -part_id 0 \
+  -chk checkpoint_final.pth
+```
+
+**The output contains two types:**
+
+1. The segmentation predictions under `$SAVE_PATH`  
+2. The CSV output under `OUTPUT_CSV_PATH`
 
