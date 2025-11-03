@@ -1,0 +1,35 @@
+### Starting at: Sun Nov  2 06:07:41 CST 2025 ###
+### Study ID: B1_RANDOM ###
+Sourcing Conda initialization script...
+### Results Directory (nnUNet_results): /cluster/VAST/civalab/results/elham_results/ePAI_test/nnUNet_Ablation_Results_CICL/B1_RANDOM ###
+
+############################
+INFO: You are using the old nnU-Net default plans. We have updated our recommendations. Please consider using those instead! Read more here: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/resenc_presets.md
+############################
+
+INFO: Found metadata CSV at: /cluster/VAST/civalab/results/elham_results/ePAI_test/PanTS_reports.csv
+INFO: Curriculum Config - Strategy: RANDOM, Metric: S10_Composite, Pct: 0.5, Steps: 4
+Using device: cuda:0
+Traceback (most recent call last):
+  File "/home/esdft/data/miniconda3/envs/epai_final/bin/nnUNetv2_train", line 8, in <module>
+    sys.exit(run_training_entry())
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/VAST/civalab/results/elham_results/ePAI_test/ePAI/train/nnunetv2/run/run_training.py", line 267, in run_training_entry
+    run_training(args.dataset_name_or_id, args.configuration, args.fold, args.tr, args.p, args.pretrained_weights,
+  File "/cluster/VAST/civalab/results/elham_results/ePAI_test/ePAI/train/nnunetv2/run/run_training.py", line 192, in run_training
+    nnunet_trainer = get_trainer_from_args(dataset_name_or_id, configuration, fold, trainer_class_name,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/VAST/civalab/results/elham_results/ePAI_test/ePAI/train/nnunetv2/run/run_training.py", line 65, in get_trainer_from_args
+    nnunet_trainer = nnunet_trainer(plans=plans, configuration=configuration, fold=fold,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/VAST/civalab/results/elham_results/ePAI_test/ePAI/train/nnunetv2/training/nnUNetTrainer/nnUNetTrainer_Ablation_Curriculum.py", line 203, in __init__
+    super().__init__(plans, configuration, fold, dataset_json, **kwargs)
+  File "/cluster/VAST/civalab/results/elham_results/ePAI_test/ePAI/train/nnunetv2/training/nnUNetTrainer/nnUNetTrainer_DS_TO.py", line 38, in __init__
+    super().__init__(plans, configuration, fold, dataset_json, device)
+  File "/cluster/VAST/civalab/results/elham_results/ePAI_test/ePAI/train/nnunetv2/training/nnUNetTrainer/nnUNetTrainer_DynamicSampling_targeted.py", line 35, in __init__
+    super().__init__(plans, configuration, fold, dataset_json, device)
+  File "/cluster/VAST/civalab/results/elham_results/ePAI_test/ePAI/train/nnunetv2/training/nnUNetTrainer/nnUNetTrainer.py", line 112, in __init__
+    self.my_init_kwargs[k] = locals()[k]
+                             ~~~~~~~~^^^
+KeyError: 'kwargs'
+### Finished at: Sun Nov  2 06:07:45 CST 2025 ###

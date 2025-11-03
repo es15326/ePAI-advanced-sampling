@@ -1,0 +1,40 @@
+{
+    "channel_names": {
+        "0": "CT"
+    },
+    "labels": {
+        "background": 0,
+        "spleen": 1,
+        "kidney_right": 2,
+        "kidney_left": 3,
+        "gall_bladder": 4,
+        "liver": 5,
+        "stomach": 6,
+        "aorta": 7,
+        "postcava": 8,
+        "pancreas": 9,
+        "adrenal_gland_right": 10,
+        "adrenal_gland_left": 11,
+        "lung_right": 12,
+        "lung_left": 13,
+        "colon": 14,
+        "prostate": 15,
+        "bladder": 16,
+        "pancreatic_duct": 17,
+        "celiac_artery": 19,
+        "common_bile_duct": 20,
+        "duodenum": 21,
+        "femur_left": 22,
+        "femur_right": 23,
+        "pancreas_body": 24,
+        "pancreas_head": 25,
+        "pancreas_tail": 26,
+        "superior_mesenteric_artery": 27,
+        "veins": 28
+    },
+    "numTraining": 100,
+    "file_ending": ".nii.gz",
+    "licence": "Whoever converted this dataset was lazy and didn't look it up!",
+    "converted_by": "Please enter your name, especially when sharing datasets with others in a common infrastructure!",
+    "name": "Dataset102_ePAI_Test"
+}

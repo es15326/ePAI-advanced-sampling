@@ -1,0 +1,4187 @@
+{
+    "name": "Task1009-YC_3mm_6cls_Syn_v1_dataset",
+    "modality": {
+        "0": "ct"
+    },
+    "labels": {
+        "0": "background",
+        "1": "pancreas",
+        "2": "duct",
+        "3": "pdac",
+        "4": "cyst",
+        "5": "pnet"
+    },
+    "numTraining": 1042,
+    "numTest": 0,
+    "training": [
+        {
+            "image": "./imagesTr/FELIX0001_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0001_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0010_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0010_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0011_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0011_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0019_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0019_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0021_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0021_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0024_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0024_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0028_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0028_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0032_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0032_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0034_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0034_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0043_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0043_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0065_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0065_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0066_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0066_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0067_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0067_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0068_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0068_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0070_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0070_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0071_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0071_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0110_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0110_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0112_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0112_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0114_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0114_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0114_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0114_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0115_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0115_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0116_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0116_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0116_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0116_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0117_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0117_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0118_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0118_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0119_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0119_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0119_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0119_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0121_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0121_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0124_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0124_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0125_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0125_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0126_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0126_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0127_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0127_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0129_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0129_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0133_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0133_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0134_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0134_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0137_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0137_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0141_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0141_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0144_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0144_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0150_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0150_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0159_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0159_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0162_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0162_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0163_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0163_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0168_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0168_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0169_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0169_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0172_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0172_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0177_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0177_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0179_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0179_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0184_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0184_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0186_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0186_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0188_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0188_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0189_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0189_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0189_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0189_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX018_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX018_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX018_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX018_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0191_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0191_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0192_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0192_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0193_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0193_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0195_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0195_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0197_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0197_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0202_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0202_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0211_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0211_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0211_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0211_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0215_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0215_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0215_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0215_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX021_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX021_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0220_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0220_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0225_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0225_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0226_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0226_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0227_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0227_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0228_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0228_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0230_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0230_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0230_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0230_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0239_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0239_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0241_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0241_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0241_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0241_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0243_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0243_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0244_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0244_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0247_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0247_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0248_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0248_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0249_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0249_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0250_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0250_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0252_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0252_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0256_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0256_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0259_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0259_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX025_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX025_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0268_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0268_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX026_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX026_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0275_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0275_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0276_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0276_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0276_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0276_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0277_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0277_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0281_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0281_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0282_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0282_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0286_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0286_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0286_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0286_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX028_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX028_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX028_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX028_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0291_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0291_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0292_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0292_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0296_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0296_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0297_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0297_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0304_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0304_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0305_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0305_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0308_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0308_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX030_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX030_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0317_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0317_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0318_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0318_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0320_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0320_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0320_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0320_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0322_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0322_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0325_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0325_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0326_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0326_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0328_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0328_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX032_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX032_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0331_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0331_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0331_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0331_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0334_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0334_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0335_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0335_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0341_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0341_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0343_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0343_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0345_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0345_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0345_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0345_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0351_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0351_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0351_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0351_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0352_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0352_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0354_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0354_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0356_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0356_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0361_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0361_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0364_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0364_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0369_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0369_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0372_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0372_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0374_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0374_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0376_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0376_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0384_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0384_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0385_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0385_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0388_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0388_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX038_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX038_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0394_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0394_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0394_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0394_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0396_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0396_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX039_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX039_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0400_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0400_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0401_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0401_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0402_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0402_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0403_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0403_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0410_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0410_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0411_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0411_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0411_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0411_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0412_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0412_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0412_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0412_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0413_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0413_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0415_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0415_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0416_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0416_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0419_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0419_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX041_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX041_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0420_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0420_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0420_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0420_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0421_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0421_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0422_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0422_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0424_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0424_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0425_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0425_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0427_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0427_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0428_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0428_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0429_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0429_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0429_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0429_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX042_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX042_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX043_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX043_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0440_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0440_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0445_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0445_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0448_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0448_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0448_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0448_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0449_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0449_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0454_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0454_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0460_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0460_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0463_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0463_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0465_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0465_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0466_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0466_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0471_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0471_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0471_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0471_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0475_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0475_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0477_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0477_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0477_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0477_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0478_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0478_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0482_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0482_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0486_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0486_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1001_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1001_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1001_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1001_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1002_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1002_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1005_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1005_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1007_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1007_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1008_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1008_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1012_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1012_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1014_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1014_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1020_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1020_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1035_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1035_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1046_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1046_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1047_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1047_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1047_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1047_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1048_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1048_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1049_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1049_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1049_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1049_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1058_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1058_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1062_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1062_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1067_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1067_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1069_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1069_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1075_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1075_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1083_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1083_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1089_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1089_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1095_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1095_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1095_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1095_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1101_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1101_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1107_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1107_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1109_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1109_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1112_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1112_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1117_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1117_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1117_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1117_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1118_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1118_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1121_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1121_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1123_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1123_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1141_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1141_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1144_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1144_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1148_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1148_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1155_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1155_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1161_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1161_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1175_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1175_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1177_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1177_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1180_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1180_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1181_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1181_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1189_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1189_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1191_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1191_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1195_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1195_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1203_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1203_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1209_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1209_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1214_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1214_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1218_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1218_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1242_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1242_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1244_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1244_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1250_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1250_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1259_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1259_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1261_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1261_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1262_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1262_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1283_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1283_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1289_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1289_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1295_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1295_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1297_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1297_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1300_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1300_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1320_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1320_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1341_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1341_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1342_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1342_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1345_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1345_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0002_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0002_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0005_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0005_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0011_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0011_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0013_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0013_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0013_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0013_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0014_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0014_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0014_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0014_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0016_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0016_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0017_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0017_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0018_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0018_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0019_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0019_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0020_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0020_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0021_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0021_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0022_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0022_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0026_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0026_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0026_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0026_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0034_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0034_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0035_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0035_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0038_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0038_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0039_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0039_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0039_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0039_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0040_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0040_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0043_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0043_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0068_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0068_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0070_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0070_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0071_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0071_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0105_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0105_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0108_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0108_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0115_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0115_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0122_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0122_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0127_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0127_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0128_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0128_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0130_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0130_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0131_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0131_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0132_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0132_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0134_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0134_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0135_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0135_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0136_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0136_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0139_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0139_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0141_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0141_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0142_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0142_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0143_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0143_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0145_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0145_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0147_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0147_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0148_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0148_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0148_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0148_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0151_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0151_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0152_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0152_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0154_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0154_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0158_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0158_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0161_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0161_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0162_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0162_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0165_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0165_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0166_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0166_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0166_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0166_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0170_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0170_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0173_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0173_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0174_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0174_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0174_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0174_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0176_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0176_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0178_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0178_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX017_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX017_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX017_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX017_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0180_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0180_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0180_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0180_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0181_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0181_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0183_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0183_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0184_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0184_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0185_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0185_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0190_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0190_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0191_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0191_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0194_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0194_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0194_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0194_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0195_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0195_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0196_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0196_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0199_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0199_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0200_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0200_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0200_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0200_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0201_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0201_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0205_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0205_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0206_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0206_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0212_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0212_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0213_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0213_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0216_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0216_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0218_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0218_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX021_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX021_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0222_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0222_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX022_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX022_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX022_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX022_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX023_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX023_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0242_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0242_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0242_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0242_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0249_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0249_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0251_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0251_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0251_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0251_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0252_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0252_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0255_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0255_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0255_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0255_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0256_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0256_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0257_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0257_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0257_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0257_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0278_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0278_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0279_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0279_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0280_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0280_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0281_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0281_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0283_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0283_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0284_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0284_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0285_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0285_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0285_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0285_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0287_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0287_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0290_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0290_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0293_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0293_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0293_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0293_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0294_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0294_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0294_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0294_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0295_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0295_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0296_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0296_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0299_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0299_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0299_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0299_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0300_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0300_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0302_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0302_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0305_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0305_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0307_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0307_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0308_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0308_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0311_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0311_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0312_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0312_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0313_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0313_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0313_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0313_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0314_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0314_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0317_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0317_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0321_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0321_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0329_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0329_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX032_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX032_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0335_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0335_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0337_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0337_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0337_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0337_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0338_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0338_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0339_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0339_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX033_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX033_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0340_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0340_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0340_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0340_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0342_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0342_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0347_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0347_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX034_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX034_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0350_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0350_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0352_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0352_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0354_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0354_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0355_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0355_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0356_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0356_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0357_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0357_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0359_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0359_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0359_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0359_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX035_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX035_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0360_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0360_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0362_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0362_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0364_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0364_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0365_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0365_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0365_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0365_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0366_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0366_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0367_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0367_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0368_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0368_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0368_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0368_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX036_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX036_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0370_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0370_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0371_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0371_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0373_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0373_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0374_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0374_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0375_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0375_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0377_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0377_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0378_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0378_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0378_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0378_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0379_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0379_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0379_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0379_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0381_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0381_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0382_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0382_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0383_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0383_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0383_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0383_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0385_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0385_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0386_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0386_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0386_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0386_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0388_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0388_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0389_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0389_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0391_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0391_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0391_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0391_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0397_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0397_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0398_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0398_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX039_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX039_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0400_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0400_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0405_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0405_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0406_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0406_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0407_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0407_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0407_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0407_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0408_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0408_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0409_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0409_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0413_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0413_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0415_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0415_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0417_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0417_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0419_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0419_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0423_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0423_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0425_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0425_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0430_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0430_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0430_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0430_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0431_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0431_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0434_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0434_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0435_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0435_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0437_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0437_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0438_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0438_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0440_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0440_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0441_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0441_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0443_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0443_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0444_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0444_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0444_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0444_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0445_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0445_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0446_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0446_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0446_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0446_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0447_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0447_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0450_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0450_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0450_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0450_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0452_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0452_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0453_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0453_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0458_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0458_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0458_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0458_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0459_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0459_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0462_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0462_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0464_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0464_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0469_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0469_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0470_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0470_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0472_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0472_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0473_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0473_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0473_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0473_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0474_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0474_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0475_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0475_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0476_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0476_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0476_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0476_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0481_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0481_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0481_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0481_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0482_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0482_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0483_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0483_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1007_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1007_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1011_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1011_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1011_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1011_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1012_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1012_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1013_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1013_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1014_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1014_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1015_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1015_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1029_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1029_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1031_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1031_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1031_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1031_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1033_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1033_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1037_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1037_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1050_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1050_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1053_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1053_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1054_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1054_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1055_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1055_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1061_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1061_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1063_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1063_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1063_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1063_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1073_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1073_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1079_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1079_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1081_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1081_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1102_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1102_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1102_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1102_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1108_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1108_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1109_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1109_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1110_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1110_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1114_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1114_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1118_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1118_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1121_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1121_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1122_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1122_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1123_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1123_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1125_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1125_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1129_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1129_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1131_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1131_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1131_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1131_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1132_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1132_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1140_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1140_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1140_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1140_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1144_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1144_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1150_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1150_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1164_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1164_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1166_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1166_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1174_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1174_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1174_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1174_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1177_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1177_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1178_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1178_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1179_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1179_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1181_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1181_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1182_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1182_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1182_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1182_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1183_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1183_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1185_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1185_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1189_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1189_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1192_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1192_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1195_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1195_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1201_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1201_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1204_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1204_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1207_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1207_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1209_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1209_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1215_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1215_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1218_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1218_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1242_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1242_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1244_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1244_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1245_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1245_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1250_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1250_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1257_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1257_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1257_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1257_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1260_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1260_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1260_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1260_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1262_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1262_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1283_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1283_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1285_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1285_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1293_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1293_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1320_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1320_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1345_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1345_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1382_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1382_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0003_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0003_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0004_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0004_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0005_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0005_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0012_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0012_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0015_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0015_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0016_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0016_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0018_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0018_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0020_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0020_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0022_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0022_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0023_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0023_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0023_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0023_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0025_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0025_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0028_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0028_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0029_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0029_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0033_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0033_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0036_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0036_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0041_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0041_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0041_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0041_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0065_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0065_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0066_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0066_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0067_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0067_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0107_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0107_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0107_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0107_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0108_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0108_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0109_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0109_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0110_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0110_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0118_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0118_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0120_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0120_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0121_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0121_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0122_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0122_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0125_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0125_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0126_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0126_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0128_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0128_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0129_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0129_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0133_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0133_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0135_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0135_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0137_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0137_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0138_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0138_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0139_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0139_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0143_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0143_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0146_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0146_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0146_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0146_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0147_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0147_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0150_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0150_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0152_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0152_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0153_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0153_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0154_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0154_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0158_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0158_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0159_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0159_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0160_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0160_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0160_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0160_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0164_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0164_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0164_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0164_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0165_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0165_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0167_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0167_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0168_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0168_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0169_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0169_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX016_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX016_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX016_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX016_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0171_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0171_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0171_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0171_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0172_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0172_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0173_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0173_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0175_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0175_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0175_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0175_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0176_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0176_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0177_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0177_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0178_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0178_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0179_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0179_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0187_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0187_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0187_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0187_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0188_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0188_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0190_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0190_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0193_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0193_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0197_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0197_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0198_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0198_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0199_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0199_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0201_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0201_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0202_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0202_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0203_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0203_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0203_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0203_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0204_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0204_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0206_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0206_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0213_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0213_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0217_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0217_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0217_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0217_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0219_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0219_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0219_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0219_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0221_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0221_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0224_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0224_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0225_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0225_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0227_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0227_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0239_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0239_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX023_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX023_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0240_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0240_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0243_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0243_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0244_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0244_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0245_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0245_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0245_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0245_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0247_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0247_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX024_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX024_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX024_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX024_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0250_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0250_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0253_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0253_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0259_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0259_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0267_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0267_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0268_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0268_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0272_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0272_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0275_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0275_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0279_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0279_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX027_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX027_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0284_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0284_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0289_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0289_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0289_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0289_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0290_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0290_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0292_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0292_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0297_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0297_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0298_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0298_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX029_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX029_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0300_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0300_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0301_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0301_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0301_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0301_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0302_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0302_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0304_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0304_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0306_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0306_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0309_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0309_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX030_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX030_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0310_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0310_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0311_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0311_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0315_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0315_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0319_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0319_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0321_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0321_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0325_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0325_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0326_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0326_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0328_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0328_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0329_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0329_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0334_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0334_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0338_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0338_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0339_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0339_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX033_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX033_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0341_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0341_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0342_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0342_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0343_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0343_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0347_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0347_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0348_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0348_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX034_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX034_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0353_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0353_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0353_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0353_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0358_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0358_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0358_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0358_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0361_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0361_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0363_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0363_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0366_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0366_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0367_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0367_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0369_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0369_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX036_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX036_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0372_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0372_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0373_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0373_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0377_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0377_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0380_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0380_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0384_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0384_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0389_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0389_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX038_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX038_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0392_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0392_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0393_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0393_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0395_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0395_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0396_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0396_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0397_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0397_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0399_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0399_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0402_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0402_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0403_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0403_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0404_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0404_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0408_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0408_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0409_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0409_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0410_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0410_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0416_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0416_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0417_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0417_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0418_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0418_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0418_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0418_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0422_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0422_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0423_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0423_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0424_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0424_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0427_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0427_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0433_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0433_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0437_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0437_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0438_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0438_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0439_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0439_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX043_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX043_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0442_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0442_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0443_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0443_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0449_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0449_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0453_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0453_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0454_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0454_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0457_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0457_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0457_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0457_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0462_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0462_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0466_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0466_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0467_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0467_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0468_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0468_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0468_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0468_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0469_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0469_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0472_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0472_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0474_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0474_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0478_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0478_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0479_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0479_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0480_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0480_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0483_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0483_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0484_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0484_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0486_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0486_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0487_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0487_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1002_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1002_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1004_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1004_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1004_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1004_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1013_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1013_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1015_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1015_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1020_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1020_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1029_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1029_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1035_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1035_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1037_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1037_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1043_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1043_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1044_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1044_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1044_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1044_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1045_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1045_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1045_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1045_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1046_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1046_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1048_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1048_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1053_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1053_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1054_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1054_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1055_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1055_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1057_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1057_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1058_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1058_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1067_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1067_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1072_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1072_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1079_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1079_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1083_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1083_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1089_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1089_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1094_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1094_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1094_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1094_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1101_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1101_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1106_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1106_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1106_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1106_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1107_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1107_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1108_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1108_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1110_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1110_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1112_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1112_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1114_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1114_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1116_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1116_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1119_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1119_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1119_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1119_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1122_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1122_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1129_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1129_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1130_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1130_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1130_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1130_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1136_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1136_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1136_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1136_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1141_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1141_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1148_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1148_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1150_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1150_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1155_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1155_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1159_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1159_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1159_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1159_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1161_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1161_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1170_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1170_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1175_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1175_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1179_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1179_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1183_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1183_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1185_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1185_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1200_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1200_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1200_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1200_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1203_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1203_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1204_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1204_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1214_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1214_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1216_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1216_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1216_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1216_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1245_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1245_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1254_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1254_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1258_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1258_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1259_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1259_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1261_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1261_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1263_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1263_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1284_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1284_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1292_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1292_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1293_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1293_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1295_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1295_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1296_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1296_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1296_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1296_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1297_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1297_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1341_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1341_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1342_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1342_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0001_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0001_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0002_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0002_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0003_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0003_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0004_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0004_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0007_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0007_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0007_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0007_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0010_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0010_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0012_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0012_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0015_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0015_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0017_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0017_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0024_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0024_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0025_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0025_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0029_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0029_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0030_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0030_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0030_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0030_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0032_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0032_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0033_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0033_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0036_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0036_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0038_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0038_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0040_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0040_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0105_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0105_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0109_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0109_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0117_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0117_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0124_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0124_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0130_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0130_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0131_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0131_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0132_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0132_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0136_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0136_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0138_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0138_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0140_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0140_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0140_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0140_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0142_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0142_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0145_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0145_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0149_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0149_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0149_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0149_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0151_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0151_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0153_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0153_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0155_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0155_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0155_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0155_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0156_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0156_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0156_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0156_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0161_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0161_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0163_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0163_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0167_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0167_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0170_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0170_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0183_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0183_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0185_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0185_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0186_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0186_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0192_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0192_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0196_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0196_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0198_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0198_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX019_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX019_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX019_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX019_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0204_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0204_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0205_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0205_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX020_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX020_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX020_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX020_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0210_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0210_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0212_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0212_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0216_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0216_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0221_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0221_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0222_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0222_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0224_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0224_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0229_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0229_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0229_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0229_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0240_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0240_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0246_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0246_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0246_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0246_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0248_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0248_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0253_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0253_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0258_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0258_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0258_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0258_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX025_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX025_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0267_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0267_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX026_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX026_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0270_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0270_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0272_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0272_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0277_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0277_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0278_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0278_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX027_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX027_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0280_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0280_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0282_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0282_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0283_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0283_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0287_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0287_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0291_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0291_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0298_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0298_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0303_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0303_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0303_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0303_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0306_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0306_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0307_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0307_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0309_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0309_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0310_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0310_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0312_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0312_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0314_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0314_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0315_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0315_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0318_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0318_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0322_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0322_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0336_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0336_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0336_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0336_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0344_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0344_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0344_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0344_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0348_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0348_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0350_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0350_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0355_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0355_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0357_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0357_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX035_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX035_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0360_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0360_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0362_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0362_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0370_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0370_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0375_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0375_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0376_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0376_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0380_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0380_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0381_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0381_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0382_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0382_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0392_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0392_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0393_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0393_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0395_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0395_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0398_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0398_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0399_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0399_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0405_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0405_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0406_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0406_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX040_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX040_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX040_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX040_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX041_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX041_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0421_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0421_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX042_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX042_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0432_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0432_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0432_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0432_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0433_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0433_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0435_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0435_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0436_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0436_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0436_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0436_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0439_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0439_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0441_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0441_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0447_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0447_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0456_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0456_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0456_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0456_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0459_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0459_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0460_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0460_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0461_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0461_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0461_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0461_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0463_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0463_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0465_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0465_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0467_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0467_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0470_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0470_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0479_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0479_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0480_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX0480_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0484_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0484_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX0487_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX0487_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1005_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1005_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1008_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1008_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1033_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1033_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1043_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1043_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1050_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1050_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1057_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1057_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1061_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1061_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1062_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1062_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1069_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1069_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1071_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1071_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1071_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1071_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1072_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1072_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1073_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1073_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1075_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1075_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1081_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1081_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1105_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1105_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1105_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1105_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1116_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1116_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1125_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1125_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1132_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1132_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1164_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1164_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1166_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1166_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1170_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1170_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1178_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1178_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1180_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1180_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1191_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1191_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1192_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1192_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1201_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1201_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1207_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1207_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1215_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1215_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1254_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1254_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1258_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1258_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1263_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1263_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1284_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1284_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1285_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1285_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1289_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1289_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1292_ARTERIAL.nii.gz",
+            "label": "./labelsTr/FELIX1292_ARTERIAL.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1300_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1300_VENOUS.nii.gz"
+        },
+        {
+            "image": "./imagesTr/FELIX1382_VENOUS.nii.gz",
+            "label": "./labelsTr/FELIX1382_VENOUS.nii.gz"
+        }
+    ],
+    "test": []
+}
