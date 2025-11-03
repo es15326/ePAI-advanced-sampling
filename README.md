@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="document/fig_epai_logo.png" alt="logo" width="260"/>
+<img src="document/fig_epai_logo.png" alt="logo" width="520"/>
 
 </div>
 
@@ -30,7 +30,7 @@ conda create -n ePAI-advanced-sampling python=3.10 -y
 
 ```bash
 source activate ePAI-advanced-sampling
-# or: conda activate ePAI
+# or: conda activate ePAI-advanced-sampling
 
 git clone https://github.com/BodyMaps/ePAI-advanced-sampling.git
 cd ePAI-advanced-sampling/train/
